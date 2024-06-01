@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Fisher-Yates</title>
+</head>
+<body>
+    <h1>Método Fisher-Yates</h1>
+    <h2>
+        <p>
+            É possível realiza-lo o com dados contidos no JavaScript, bem como com dados inseridos pelo usuário.
+        </p>
+        <p>
+           No site do Cangaceiro JavaScript, podemos ver aplicações do código e suas respectivas explicações:<br>
+           <a href="http://cangaceirojavascript.com.br/como-embaralhar-arrays-algoritmo-fisher-yates/">Acesse o conteúdo aqui!</a>
+        </p>
+    </h2>
+
+    <fieldset>
+        <h2><strong>Dados contidos no JavaScript</strong></h2>
+        <div>
+           <p id="grupo1-js"></p>
+        </div>
+
+        <div>
+            <p id="grupo2-js"></p>
+        </div>
+
+        <div>
+            <p id="grupo3-js"></p>
+         </div>
+
+         <div>
+            <p id="grupo4-js"></p>
+         </div>
+
+         <div>
+            <p id="grupo5-js"></p>
+         </div>
+
+        <div>
+            <p id="resultado-js">O resultado do Método concat() com Grupo 1 e Grupo 2 é:</p>
+        </div>
+
+        <div>
+            <p id="embaralha-js">O resultado do Método de Fisher Yates é:</p>
+        </div>
+
+        <div>
+            <p id="remover-duplicatasjs">O resultado do método para remover duplicatas é:</p>
+        </div>
+
+        <button class="botao" id="embaralhaJS" onclick="embaralhaJS()">Embaralha</button>
+
+        <button class="botao" id="remover-duplicatas-js-botao" onclick="removerDuplicatasBotaoJS()">Remover duplicatas</button>
+
+    </fieldset>
+    
+    <br>
+
+    <fieldset>
+        <h2><strong>Dados inseridos pelo usuário</strong></h2><br>
+        <div>
+            <label><strong>Grupo 1</strong></label>
+            <input type="value" name="grupo1-usuario" id="grupo1-usuario" required>
+        </div>
+
+        <div>
+            <label><strong>Grupo 2</strong></label>
+            <input type="value" name="grupo2-usuario" id="grupo2-usuario" required>
+        </div>
+
+        <div>
+            <label><strong>Grupo 3</strong></label>
+            <input type="value" name="grupo3-usuario" id="grupo3-usuario" required>
+        </div>
+
+        <div>
+            <label><strong>Grupo 4</strong></label>
+            <input type="value" name="grupo4-usuario" id="grupo4-usuario" required>
+        </div>
+
+        <div>
+            <label><strong>Grupo 5</strong></label>
+            <input type="value" name="grupo5-usuario" id="grupo5-usuario" required>
+        </div>
+
+        <div>
+            <p id="resultado-usuario">O resultado do Método concat() é:</p>
+        </div>
+
+        <div>
+            <p id="embaralha-usuario">O resultado do Método de Fisher Yates é:</p>
+        </div>
+
+        <div>
+            <p id="remover-duplicatas-usuario">O resultado do método para remover duplicatas é:</p>
+        </div>
+
+        <button class="botao" id="botao" onclick="usuario()">Concatenar</button>
+
+        <button class="botao" id="embaralha-usuario-botao" onclick="embaralhaUsuario()">Embaralha</button>
+
+        <button class="botao" id="remover-duplicatas-usuario-botao" onclick="removerDuplicatasBotaoUsuario()">Remover duplicatas</button>
+
+    </fieldset>
+    <script src="Removendo duplicatas.js"></script>
+</body>
+</html>
